@@ -1,10 +1,14 @@
-# NBA 2018–2019 Season Analysis
+# NBA 2018–2019 Season Analysis🏀🏀
 
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 A comprehensive exploratory data analysis (EDA) of NBA player performance during the 2018–2019 season. This project examines detailed statistics for 150+ top players across all 30 teams, focusing on scoring efficiency, playmaking ability, rebounding metrics, and overall contribution patterns to identify standout performances and evaluate the impact of mid-season roster changes.
 
 <br/>
+
+## 📍*The `NBA_Eda.ipynb` notebook is too large to be displayed. Just download it locally and upload to your `Google Drive` to use colab virtual environment*
+
+---
 
 ## Table of Contents
 * [Overview](#overview)
@@ -45,45 +49,42 @@ The analysis demonstrates advanced data science techniques and best practices:
 ## Installation
 
 ### Prerequisites
-* Python 3.7 or higher
-* pip package manager
-* Jupyter Notebook or JupyterLab
+* Google Account (for Google Colab)
+* Web browser with internet connection
 
 ### Setup Instructions
 
-1. Clone the repository from GitHub:
-```bash
-git clone https://github.com/yourusername/nba-eda-2018-2019.git
-cd nba-eda-2018-2019
-```
+**1: Google Colab (Recommended)**
 
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+1. Open the notebook directly in Google Colab:
+   - Navigate to [Google Colab](https://colab.research.google.com/)
+   - Click `File > Upload notebook`
+   - Upload `NBA_Eda.ipynb` or connect to GitHub and import directly
 
-3. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
+2. All dependencies are installed automatically within the notebook, including:
+   ```python
+   !pip install ydata-profiling
+   ```
+
+3. No additional setup required - all libraries (Pandas, NumPy, Matplotlib, Seaborn, Plotly) are pre-installed in Colab
 
 <br/>
 
 ## Usage
 
-### Running the Analysis
+### Running the Analysis in Google Colab
 
-1. Launch Jupyter Notebook from the project directory:
-```bash
-jupyter notebook
-```
+1. Upload `NBA_Eda.ipynb` to Google Colab or open directly from GitHub
 
-2. Open `NBA_Eda.ipynb` in the Jupyter interface
+2. Execute cells sequentially using `Shift + Enter` or run all cells via `Runtime > Run all`
 
-3. Execute cells sequentially using `Shift + Enter` or run all cells via `Cell > Run All`
+3. The notebook will automatically:
+   - Install `ydata-profiling` using pip
+   - Load the dataset from Hugging Face
+   - Execute all analysis steps
+   - Generate interactive visualizations
 
-4. Interactive visualizations will render directly in the notebook, allowing for dynamic exploration of the data
+4. Interactive Plotly charts will render directly in the notebook with full functionality (zoom, pan, hover tooltips)
 
 ### Analysis Outputs
 
@@ -100,18 +101,20 @@ The notebook generates:
 ## Libraries and Technologies
 
 ### Core Data Science Stack
-* **Pandas** (v1.3+) - Data manipulation, transformation, and aggregation
-* **NumPy** (v1.21+) - Numerical computing and array operations
-* **SciPy** (v1.7+) - Statistical functions including z-score calculations and hypothesis testing
+* **Pandas** - Data manipulation, transformation, and aggregation
+* **NumPy** - Numerical computing and array operations
+* **SciPy** - Statistical functions including z-score calculations and hypothesis testing
 
 ### Visualization Suite
-* **Plotly Express** (v5.0+) - High-level interface for interactive charts
+* **Plotly Express** - High-level interface for interactive charts
 * **Plotly Graph Objects** - Low-level API for complex multi-trace visualizations
-* **Matplotlib** (v3.4+) - Foundational plotting library for static graphics
-* **Seaborn** (v0.11+) - Statistical visualization with enhanced aesthetics
+* **Matplotlib** - Foundational plotting library for static graphics
+* **Seaborn** - Statistical visualization with enhanced aesthetics
 
 ### Data Profiling
-* **ydata-profiling** (v4.0+) - Automated exploratory data analysis report generation
+* **ydata-profiling** - Automated exploratory data analysis report generation (installed via notebook)
+
+**Note**: All libraries except `ydata-profiling` come pre-installed in Google Colab. The notebook includes the necessary pip install command for `ydata-profiling`.
 
 <br/>
 
@@ -246,8 +249,3 @@ For questions, suggestions, or collaboration opportunities:
 
 **GitHub**: [YasserAlbogami](https://github.com/YasserAlbogami)  
 **Email**: yasserayalbogami@gmail.com
-
-
----
-
-*Analysis conducted using Python data science stack. Dataset sourced from Hugging Face and validated against official NBA statistics.*
